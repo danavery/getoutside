@@ -1,0 +1,38 @@
+// Place all the styles related to the Welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+html { 
+  height: 100% 
+}
+
+body {  
+  height: 100%; 
+  margin: 0px; 
+  padding: 0px 
+}
+
+#map_selection { 
+  height: 10%; 
+  width: 100%; 
+  background-color: #c00c00; 
+  float: left 
+}
+
+#map_canvas { 
+  height: 90%; 
+  width: 100%; 
+  float: right 
+}
+
+.selected { 
+  background-color: lightblue 
+}
+
+.unselected { 
+  background-color: darkgrey 
+}
+
+.activitybutton { 
+  font-size: 1.8em; 
+  margin: 15px 20px 10px 20px 
+}
