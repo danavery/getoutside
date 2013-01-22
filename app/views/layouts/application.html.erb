@@ -5,11 +5,16 @@
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= javascript_include_tag "http://maps.googleapis.com/maps/api/js?sensor=false" %>
-
-
-
   <%= csrf_meta_tags %>
+
   <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+  
+  <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v2/themes/css/cartodb.css" />
+<!--[if lte IE 8]>
+    <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v2/themes/css/cartodb.ie.css" />
+<![endif]-->
+<script src="http://libs.cartocdn.com/cartodb.js/v2/cartodb.js"></script>
+
 </head>
 <body>
 
