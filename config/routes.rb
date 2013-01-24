@@ -1,4 +1,4 @@
-Gooutside::Application.routes.draw do
+Getoutside::Application.routes.draw do
   get "welcome/index"
 
   # The priority is based upon order of creation:

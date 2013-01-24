@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Gooutside::Application.load_tasks
+Getoutside::Application.load_tasks
