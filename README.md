@@ -1,0 +1,1 @@
+A quick and dirty CartoDB-based plot of activities in Summit County Metroparks.
