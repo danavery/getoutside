@@ -4,45 +4,51 @@
   <title>GetOutside!</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
-  <%= javascript_include_tag "http://maps.googleapis.com/maps/api/js?sensor=false" %>
+  <!--<%= javascript_include_tag "http://maps.googleapis.com/maps/api/js?sensor=false" %> -->
   <%= csrf_meta_tags %>
 
-  <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <link href="https://fonts.googleapis.com/css?family=Limelight|Flamenco|Federo|Yesteryear|Josefin Sans|Spinnaker|Sansita One|Handlee|Droid Sans|Oswald:400,300,700"
+  media="screen" rel="stylesheet" type="text/css" />
+
+
   <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v2/themes/css/cartodb.css" />
 <!--[if lte IE 8]>
     <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v2/themes/css/cartodb.ie.css" />
-<![endif]-->
-<script src="http://libs.cartocdn.com/cartodb.js/v2/cartodb.js"></script>
+    <![endif]-->
+    <script src="http://libs.cartocdn.com/cartodb.js/v2/cartodb.js"></script>
 
-<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.css" />
-<script src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js"></script>
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.css" />
+    <script src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js"></script>
 
-<script type="infowindow/html" id="infowindow_template">
+    <script type="infowindow/html" id="infowindow_template">
     <div class="cartodb-popup">
-      <a href="#close" class="cartodb-popup-close-button close">x</a>
-      <div class="cartodb-popup-content-wrapper">
-        <div class="carto-popup-header">
-          <!-- <img style="width: 100%" src="http://cartodb.com/assets/logos/logos_full_cartodb_light-5ef5e4ff558f4f8d178ab2c8faa231c1.png"></src> -->
-        </div>
-        <div class="cartodb-popup-content">
-          <!-- content.data contains the field info -->
-          <h2>{{content.data.name}}</h2>
-          <br>
-          <h3>{{content.data.address}}</h3>
-          <h4><a href="{{content.data.map_url}}">map</a></h4>
-          <h4><a href="{{content.data.website}}">website</a></h4>
-        </div>
-      </div>
-      <div class="cartodb-popup-tip-container"></div>
+    <a href="#close" class="cartodb-popup-close-button close">x</a>
+    <div class="cartodb-popup-content-wrapper">
+    <div class="carto-popup-header">
+    <!-- <img style="width: 100%" src="http://cartodb.com/assets/logos/logos_full_cartodb_light-5ef5e4ff558f4f8d178ab2c8faa231c1.png"></src> -->
     </div>
-  </script>
+    <div class="cartodb-popup-content">
+    <!-- content.data contains the field info -->
+    <h2>{{content.data.name}}</h2>
+    <br>
+    <h3>{{content.data.address}}</h3>
+    <h4><a href="{{content.data.map_pdf}}">map</a></h4>
+    <h4><a href="{{content.data.website}}">website</a></h4>
+    </div>
+    </div>
+    <div class="cartodb-popup-tip-container"></div>
+    </div>
+    </script>
 
-</head>
-<body>
+
+  </head>
+  <body>
 
 
-<%= yield %>
+    <%= yield %>
 
-</body>
-</html>
+  </body>
+  </html>

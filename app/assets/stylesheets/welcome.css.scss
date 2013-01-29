@@ -1,38 +1,70 @@
-// Place all the styles related to the Welcome controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-html { 
-  height: 100% 
-}
-
-body {  
-  height: 100%; 
-  margin: 0px; 
-  padding: 0px 
-}
-
-#map_selection { 
-  height: 10%; 
-  width: 100%; 
-  background-color: #c00c00; 
-  float: left 
-}
-
-#map_canvas { 
-  height: 90%; 
-  width: 100%; 
-  float: right 
-}
-
-.selected { 
-  background-color: lightblue 
-}
-
-.unselected { 
-  background-color: darkgrey 
-}
-
-.activitybutton { 
-  font-size: 0.7em; 
-  margin: 5px 0px 0px 0px 
-}
+     /* This makes absolutely positioned elements like p, h1,
+     and some bootstrap elements placed properly. */
+     #absolute-wrapper p, #absolute-wrapper h1, #absolute-wrapper h2, #absolute-wrapper h3, #absolute-wrapper h4, #absolute-wrapper h5, #absolute-wrapper h6 {
+       margin-top: 0 !important;
+     }
+     .container-empty.container-empty-1 {
+       width: 684px;
+       height: 791px;
+       position: absolute;
+       top: 121px;
+       left: 286px;
+     }
+     .container-empty.container-empty-2 {
+       background: #055b2e url(GetOutside-Bottom-08.png) repeat 0px 0px;
+       background-size: auto;
+       width: 275px;
+       height: 90px;
+       position: absolute;
+       top: 820px;
+       left: 11px;
+     }
+     div .checkbox.checkbox-1 {
+       margin: 0px 0px 10px 40px;
+       color: #5b452d;
+     }
+     div p.p-1 {
+       margin: 20px 0px 10px 40px;
+       color: #5b452d;
+     }
+     div p.p-2 {
+       font-size: 10px;
+       line-height: 20.303030014038086px;
+       margin: 0px 20px 10px 40px;
+       color: #5b452d;
+     }
+     div.div-1 {
+       background: #eae3d3 url(GetOutside-SideBar-gradient-07.png) repeat 0px 0px;
+       background-size: auto;
+       width: 275px;
+       height: 700px;
+       position: absolute;
+       top: 120px;
+       left: 10px;
+     }
+     #absolute-wrapper {
+       position: relative;
+       width: 980px;
+       /* centers the document */
+       margin: 0 auto;
+       /* hack to stick to top of page */
+       height: 1px;
+     }
+     .container {
+       -moz-box-shadow: 0px 1px 4px 0px #000000;
+       -webkit-box-shadow: 0px 1px 4px 0px #000000;
+       -o-box-shadow: 0px 1px 4px 0px #000000;
+       box-shadow: 0px 1px 4px 0px #000000;
+       background: rgba(0, 0, 0, 0) url(GetOutside-banner-gradient-06.png) repeat 0px 0px;
+       background-size: auto;
+       height: 119px;
+       width: 959px;
+     }
+     
+      /* katie's first attempt at css...might not work */
+     
+     .selected {
+      color: #055B2E;
+      font-weight: bold;
+     }
+   
