@@ -1,3 +1,5 @@
+
+
 $(function () {
 
   // function initializeMap() {
@@ -19,7 +21,10 @@ $(function () {
   //     }
   //   }).done(function(layer) { 
   //     console.log(layer);
-  //     map.overlayMapTypes.setAt(0, layer);
+      
+  //     map.overlayMapTypes.insertAt(0, layer);
+  //     layer.infowindow = {};
+  //     layer.infowindow['template'] = $('#infowindow_template').html();
   //     addClickBehavior(layer);
   //   });
   // }
@@ -27,9 +32,33 @@ $(function () {
   function initializeMap() {
     cartodb.createVis('map_canvas',"http://danavery.cartodb.com/api/v1/viz/17246/viz.json")
     .done(function(vis, layers) {
+      setupLayer(layers[1]);
       addClickBehavior(layers[1]);
+     
+      //layers[1].setCartoCSS("#{{table_name}}{ marker-allow-overlap: true }");
     })
   }
+
+function setupLayer(layer) {
+   layer.on('error', function(err) { console.log(err); });
+    //layer.setCartoCSS("#{{table_name}}{ marker-fill:blue; }");
+    
+    // layer.setCartoCSS("#{{table_name}}{ marker-fill:blue }");
+    // layer.hide();
+    // layer.show();
+    layer.infowindow.set('template', $('#infowindow_template').html());
+
+  console.log(layer);
+}
+  // function initializeMap() {
+  //   map = new L.map('cartodb-map', {
+  //     center: [41.073056, -81.517778],
+  //     zoom: 10
+  //   });
+  //   L.tileLayer('https://dnv9my2eseobd.cloudfront.net/v3/cartodb.map-4xtxp73f/{z}/{x}/{y}.png', {
+  //     attribution: 'Mapbox <a href="http://mapbox.com/about/maps" target="_blank">Terms & Feedback</a>'
+  //   }).addTo(map);
+  // }
 
   function addClickBehavior(layer) {
     var $activities = $('.activitybutton');
@@ -69,6 +98,10 @@ $(function () {
       query = "select * from locations";
     }
     layer.setQuery(query);
+    console.log(layer);
+
+
+
   }
   
   
