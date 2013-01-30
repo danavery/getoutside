@@ -13,6 +13,7 @@
        left: 276px;
      }
      
+     
      /* bottom under nav */
      .container-empty.container-empty-2 {
        background: #055b2e url(GetOutside-Bottom-08.png) repeat 0px -20px;
@@ -64,9 +65,34 @@
      }
      
       /* katie's first attempt at css...might not work */
-     
+           
      .selected {
       color: #055B2E;
       font-weight: bold;
      }
    
+    .cartodb-popup-content h2 {
+    	font-size: 14px;
+    	line-height: 20px;
+    	font: arial;
+    }
+    
+    .cartodb-popup-content h3 {
+    	font-size: 10px;
+    	line-height: 15px;
+    	font: arial;
+    }
+    
+    .cartodb-popup-content h5 {
+    	font-size: 10px;
+    	line-height: 15px;
+    	font: arial;
+    }
+    
+   #infoanchor { 
+    	color: #055B2E;
+    }
+    
+     #infoanchor2 { 
+    	color: #055B2E;
+    }
