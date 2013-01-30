@@ -3,24 +3,28 @@
      #absolute-wrapper p, #absolute-wrapper h1, #absolute-wrapper h2, #absolute-wrapper h3, #absolute-wrapper h4, #absolute-wrapper h5, #absolute-wrapper h6 {
        margin-top: 0 !important;
      }
+     
+     /* map */
      .container-empty.container-empty-1 {
        width: 684px;
-       height: 791px;
+       height: 591px;
        position: absolute;
        top: 121px;
-       left: 286px;
+       left: 276px;
      }
+     
+     /* bottom under nav */
      .container-empty.container-empty-2 {
-       background: #055b2e url(GetOutside-Bottom-08.png) repeat 0px 0px;
+       background: #055b2e url(GetOutside-Bottom-08.png) repeat 0px -20px;
        background-size: auto;
        width: 275px;
-       height: 90px;
+       height: 91px;
        position: absolute;
-       top: 820px;
-       left: 11px;
+       top: 620px;
+       left: 0px;
      }
      div .checkbox.checkbox-1 {
-       margin: 0px 0px 10px 40px;
+       margin: 0px 0px 5px 40px;
        color: #5b452d;
      }
      div p.p-1 {
@@ -29,7 +33,7 @@
      }
      div p.p-2 {
        font-size: 10px;
-       line-height: 20.303030014038086px;
+       line-height: 20px;
        margin: 0px 20px 10px 40px;
        color: #5b452d;
      }
@@ -37,10 +41,10 @@
        background: #eae3d3 url(GetOutside-SideBar-gradient-07.png) repeat 0px 0px;
        background-size: auto;
        width: 275px;
-       height: 700px;
+       height: 500px;
        position: absolute;
        top: 120px;
-       left: 10px;
+       left: 0px;
      }
      #absolute-wrapper {
        position: relative;
@@ -50,11 +54,9 @@
        /* hack to stick to top of page */
        height: 1px;
      }
+     
+   /* header */  
      .container {
-       -moz-box-shadow: 0px 1px 4px 0px #000000;
-       -webkit-box-shadow: 0px 1px 4px 0px #000000;
-       -o-box-shadow: 0px 1px 4px 0px #000000;
-       box-shadow: 0px 1px 4px 0px #000000;
        background: rgba(0, 0, 0, 0) url(GetOutside-banner-gradient-06.png) repeat 0px 0px;
        background-size: auto;
        height: 119px;
