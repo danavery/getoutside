@@ -62,16 +62,21 @@ function setupLayer(layer) {
 
   function addClickBehavior(layer) {
     var $activities = $('.activitybutton');
+    console.log("ab");
+    console.log($activities);
     $activities.click(function (e) {
       var targetId = e.target.id;
-      var activityName = targetId.replace("_", " ");
-      console.log(activityName);
-      if ($("#" + targetId).hasClass("selected")) {
-        $("#" + targetId).addClass("unselected").removeClass("selected");
+      var labelId = $(e.target).parent().attr("id");
+      console.log("lid: " + labelId);
+      var activityName = labelId;
+      activityName = activityName.replace("_", " ");
+      console.log("an " + activityName);
+      if ($("#" + activityName).hasClass("selected")) {
+        $("#" + activityName).addClass("unselected").removeClass("selected");
         delete currentActivities[activityName];
       }
       else {
-        $("#" + targetId).removeClass("unselected").addClass("selected");
+        $("#" + activityName).removeClass("unselected").addClass("selected");
         currentActivities[activityName] = 1;
       }
       console.log(currentActivities);
@@ -98,7 +103,7 @@ function setupLayer(layer) {
       query = "select * from locations";
     }
     layer.setQuery(query);
-    console.log(layer);
+    //console.log(layer);
 
 
 
