@@ -69,14 +69,15 @@ function setupLayer(layer) {
       var labelId = $(e.target).parent().attr("id");
       console.log("lid: " + labelId);
       var activityName = labelId;
-      activityName = activityName.replace("_", " ");
+      activityName = activityName.replace(/_/g, " ");
+      activityName = activityName.replace(/slash/, "/");
       console.log("an " + activityName);
-      if ($("#" + activityName).hasClass("selected")) {
-        $("#" + activityName).addClass("unselected").removeClass("selected");
+      if ($("#" + labelId).hasClass("selected")) {
+        $("#" + labelId).addClass("unselected").removeClass("selected");
         delete currentActivities[activityName];
       }
       else {
-        $("#" + activityName).removeClass("unselected").addClass("selected");
+        $("#" + labelId).removeClass("unselected").addClass("selected");
         currentActivities[activityName] = 1;
       }
       console.log(currentActivities);
