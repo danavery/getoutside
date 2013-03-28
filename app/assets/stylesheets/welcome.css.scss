@@ -5,17 +5,19 @@
      }
      
      /* map */
-     .container-empty.container-empty-1 {
+     .map {
        width: 684px;
        height: 591px;
        position: absolute;
        top: 121px;
        left: 287px;
+       border-radius: 50px;
+
      }
      
      
      /* bottom under nav */
-     .container-empty.container-empty-2 {
+     .under-nav {
        background: #055b2e url(GetOutside-Bottom-08.png) repeat 0px -20px;
        background-size: auto;
        width: 275px;
