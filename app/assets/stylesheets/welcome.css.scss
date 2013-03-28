@@ -6,7 +6,7 @@
 
         /* header */  
      .header {
-       background: rgba(0, 0, 0, 0) url(GetOutside-banner-gradient-06.png) repeat 0px 0px;
+       background: rgba(0, 0, 0, 0) url(GetOutside-Header-06.png) repeat 0px 0px;
        background-size: auto;
        height: 119px;
        width: 959px;
@@ -15,7 +15,7 @@
      /* map */
      .map {
        width: 684px;
-       height: 611px;
+       height: 631px;
        position: absolute;
        top: 121px;
        left: 276px;
@@ -28,23 +28,31 @@
        color: #5b452d;
      }
 
+    h1 {
+      font-size: 20px;
+      line-height: 30px;
+      margin: 20px 20px 10px 40px;
+      color: #5b452d;
+    }
+
      div p.p-1 {
-       margin: 20px 0px 10px 40px;
-       color: #5b452d;
+       margin: -15px 0px 0px 40px;
+       color: #005C2C;
      }
+
 
      div p.p-2 {
        font-size: 10px;
        line-height: 20px;
        margin: 0px 20px 10px 40px;
-       color: #5b452d;
+       color: #005C2C;
      }
 
      div.div-1 {
        background: #eae3d3 url(GetOutside-SideBar-gradient-07.png) repeat 0px 0px;
        background-size: auto;
        width: 275px;
-       height: 520px;
+       height: 547px;
        position: absolute;
        top: 120px;
      }
@@ -56,7 +64,7 @@
        width: 275px;
        height: 91px;
        position: absolute;
-       top: 640px;
+       top: 668px;
      }
 
      #absolute-wrapper {
