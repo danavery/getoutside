@@ -3,6 +3,14 @@
      #absolute-wrapper p, #absolute-wrapper h1, #absolute-wrapper h2, #absolute-wrapper h3, #absolute-wrapper h4, #absolute-wrapper h5, #absolute-wrapper h6 {
        margin-top: 0 !important;
      }
+
+        /* header */  
+     .header {
+       background: rgba(0, 0, 0, 0) url(GetOutside-banner-gradient-06.png) repeat 0px 0px;
+       background-size: auto;
+       height: 119px;
+       width: 959px;
+     }
      
      /* map */
      .map {
@@ -10,37 +18,29 @@
        height: 591px;
        position: absolute;
        top: 121px;
-       left: 287px;
+       left: 276px;
        border-radius: 50px;
 
      }
-     
-     
-     /* bottom under nav */
-     .under-nav {
-       background: #055b2e url(GetOutside-Bottom-08.png) repeat 0px -20px;
-       background-size: auto;
-       width: 275px;
-       height: 91px;
-       position: absolute;
-       top: 620px;
-       left: 11px;
-     }
+
      /* check box container*/
      div .checkbox.checkbox-1 {
        margin: 0px 0px 5px 40px;
        color: #5b452d;
      }
+
      div p.p-1 {
        margin: 20px 0px 10px 40px;
        color: #5b452d;
      }
+
      div p.p-2 {
        font-size: 10px;
        line-height: 20px;
        margin: 0px 20px 10px 40px;
        color: #5b452d;
      }
+
      div.div-1 {
        background: #eae3d3 url(GetOutside-SideBar-gradient-07.png) repeat 0px 0px;
        background-size: auto;
@@ -48,8 +48,18 @@
        height: 500px;
        position: absolute;
        top: 120px;
-       left: 11px;
      }
+
+          /* bottom under nav */
+     .under-nav {
+       background: #055b2e url(GetOutside-Bottom-08.png) repeat 0px -20px;
+       background-size: auto;
+       width: 275px;
+       height: 91px;
+       position: absolute;
+       top: 620px;
+     }
+
      #absolute-wrapper {
        position: relative;
        width: 980px;
@@ -57,14 +67,6 @@
        margin: 0 auto;
        /* hack to stick to top of page */
        height: 1px;
-     }
-     
-   /* header */  
-     .container {
-       background: rgba(0, 0, 0, 0) url(GetOutside-banner-gradient-06.png) repeat 0px 0px;
-       background-size: auto;
-       height: 119px;
-       width: 959px;
      }
      
       /* katie's first attempt at css...might not work */
